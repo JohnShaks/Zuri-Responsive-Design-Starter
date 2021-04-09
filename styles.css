@@ -28,19 +28,19 @@
     padding: 0;
 }
 
-.nav-bar .nav-links li {
+div.nav-bar .nav-links li {
     margin: 0 2vw;
     list-style: none;
     font-size: 1.1rem;
 }
 
-.nav-bar .nav-links li a {
+div.nav-bar .nav-links li a {
     text-decoration: none;
     color: #88949B;
     padding: 0.5vw;
 }
 
-.nav-bar .nav-links li a:hover {
+div.nav-bar .nav-links li a:hover {
     color: #304353;
     background: #fff;
     padding: 0.5rem;
@@ -51,7 +51,7 @@
 
 .menu-btn {
     color: #fff;
-    font-size: 23ppx;
+    font-size: 1.5rem;
     cursor: pointer;
     display: none;
 }
@@ -376,14 +376,23 @@ div.footer h6 {
 /* responsive styling */
 
 @media(max-width: 414px) {
-    .menu-btn {
+    div.logo {
+        font-size: 1.5rem;
+    }
+    div.nav-bar {
+        padding: 40px 40px;
+    }
+    div.menu-btn {
         display: block;
         z-index: 999;
     }
-    .nav-bar {
-        padding: 30px 30px;
+    div.menu-btn i.active::before {
+        content: "\f00d";
     }
-    .nav-bar .nav-links {
+    div.nav-bar .nav-links.active {
+        left: 0;
+    }
+    div.nav-bar .nav-links {
         position: fixed;
         background: #000;
         height: 100vh;
@@ -392,16 +401,82 @@ div.footer h6 {
         top: 0;
         text-align: center;
         padding-top: 80px;
+        transition: all 0.3s ease;
     }
-    .nav-bar .nav-links.active {
-        left: -0;
-    }
-    .nav-bar .nav-links li {
+    /* div.nav-bar .nav-links li {
+        display: block; */
+    div.nav-bar .nav-links li a {
         display: block;
-    }
-    .nav-bar .nav-links li a {
-        display: inline-block;
         font-size: 25px;
         margin: 20px 0;
+    }
+    div.hero-section {
+        background: #304353;
+        padding: 10rem 2rem;
+    }
+    div.hero-content-heading {
+        text-align: center;
+    }
+    div.hero-content-heading h3 {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+        ;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 300;
+        color: #bcc3c7;
+    }
+    div.hero-content-heading p {
+        text-align: center;
+        padding-top: 0.7rem;
+        color: #88949B;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        font-weight: 300;
+    }
+    div.background {
+        background: #fff;
+        box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+        padding: 15px 40px;
+        width: 500px;
+        height: 300px;
+        position: relative;
+    }
+    div.background h4 {
+        padding: 2rem 2rem;
+        color: #555657;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    div.background p {
+        color: #A6A5AA;
+        padding-left: 1rem;
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+    }
+    div.hero-background-pos {
+        display: none;
+    }
+    div.snapshot-team {
+        background: #f0f0f0;
+        text-align: center;
+        padding: 2rem 2rem;
+    }
+    div.snapshot-team h2 {
+        color: #555657;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    div.snapshot-team p {
+        color: #A6A5AA;
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+        padding-top: 1rem;
+    }
+    div.snapshot-box-content {
+        display: flex;
+        flex-direction: column;
     }
 }
