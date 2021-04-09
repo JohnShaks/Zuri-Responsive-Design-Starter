@@ -306,7 +306,7 @@ div.footer-input {
 input[type="text"] {
     margin-right: 10px;
     padding: 10px 20px;
-    width: 25%;
+    width: 41%;
     outline: none;
     border: 1px solid #bcc3c7;
     background: transparent;
@@ -318,7 +318,7 @@ input[type="text"] {
 input[type="email"] {
     margin-right: 10px;
     padding: 10px 20px;
-    width: 25%;
+    width: 41%;
     outline: none;
     border: 1px solid #bcc3c7;
     background: transparent;
@@ -339,7 +339,7 @@ div.footer-textarea {
 }
 
 textarea {
-    width: 51%;
+    width: 85%;
     height: 150px;
     padding: 0.5rem;
     outline: none;
@@ -402,9 +402,11 @@ div.footer h6 {
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
+        flex-direction: column;
     }
-    /* div.nav-bar .nav-links li {
-        display: block; */
+    div.nav-bar .nav-links li {
+        display: inline-block;
+    }
     div.nav-bar .nav-links li a {
         display: block;
         font-size: 25px;
